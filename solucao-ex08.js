@@ -1105,7 +1105,7 @@ function calcularMaisValioso() {
             }
         }
     }
-    return `O produto ${produto} é o mais valioso da loja (valor: ${maisValioso}).`
+    return `O produto ${produto} é o mais valioso da loja (valor: R$${maisValioso}).`
 }
 
 console.log(calcularMaisValioso())
