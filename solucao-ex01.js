@@ -1093,3 +1093,12 @@ var listaProdutos = [
     }
 ]
 
+function somarEstoque() {
+    let soma = 0;
+    for(let p in listaProdutos) {
+        soma += listaProdutos[p].qtdEstoque;
+    }
+    return soma;
+}
+
+console.log(`A Quantidade total de itens em estoque é ${somarEstoque()}.`);
