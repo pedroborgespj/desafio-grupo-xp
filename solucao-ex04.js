@@ -1096,7 +1096,7 @@ var listaProdutos = [
 function somarDisponiveisEstoque() {
     let soma = 0;
     for(let p in listaProdutos) {
-        if(listaProdutos[p].qtdEstoque > 0 && listaProdutos[p].disponivel === 'sim') {
+        if(listaProdutos[p].emDestaque === 'sim' && listaProdutos[p].disponivel === 'sim') {
             soma += listaProdutos[p].qtdEstoque;
         }
     }
