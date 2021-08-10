@@ -1096,7 +1096,7 @@ var listaProdutos = [
 function calcularMedia() {
     let soma = 0;
     for(let p in listaProdutos) {
-        soma += listaProdutos[p].preco * listaProdutos[p].qtdEstoque
+        soma += listaProdutos[p].preco
     }
     ticketMedio = soma / listaProdutos.length;
     const formatado = ticketMedio.toLocaleString('pt-BR', {styele: 'currency', currency: 'BRL'});
